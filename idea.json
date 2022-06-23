@@ -1,0 +1,43 @@
+{
+  "name": "idea",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "problem": {
+      "type": "string"
+    },
+    "solution": {
+      "type": "string"
+    },
+    "web": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    },
+    "requestedFunds": {
+      "type": "string"
+    },
+    "impact": {
+      "type": "string"
+    },
+    "auditability": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "challenge": {
+      "type": "belongsTo",
+      "model": "challenge"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
