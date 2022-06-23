@@ -1,0 +1,28 @@
+{
+  "name": "customer",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    }
+    
+
+  },
+  "validations": [],
+  "relations": {
+    "MongoModel": {
+      "type": "hasMany",
+      "model": "MongoModel",
+      "foreignKey": "customerId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

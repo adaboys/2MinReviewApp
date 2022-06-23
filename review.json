@@ -1,0 +1,44 @@
+{
+  "name": "review",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "impact": {
+      "type": "string"
+    },
+    "impactScore": {
+      "type": "string"
+    },
+    "feasibility": {
+      "type": "string"
+    },
+    "feasibilityScore": {
+      "type": "string"
+    },
+    "auditability": {
+      "type": "string"
+    },
+    "auditabilityScore": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "User"
+    },
+    "idea": {
+      "type": "belongsTo",
+      "model": "idea"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
